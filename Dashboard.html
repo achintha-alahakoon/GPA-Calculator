@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GPA Calculator</title>
+        <link rel="stylesheet" href="DashboardStyles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>GPA Calculator</h1>
+            <div class="input-container">
+                <input type="text" id="courseName" placeholder="Course Name">
+                <input type="number" id="courseCredit" placeholder="Course Credit" min="0">
+                <input type="text" id="courseGrade" placeholder="Course Grade">
+                <button id="add">Add</button>
+            </div>
+            <div>
+                <p>"ACLT, CMSK, GNCT" The credits that are not counted for GPA</p>
+                <p>Only 'GNCT 32216' is counted</p>
+            </div>
+            <div class="table-container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Course Name</th>
+                            <th scope="col">Credit</th>
+                            <th scope="col">Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody id="courseTableBody">
+                        <!-- Course rows will be dynamically added here -->
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <button id="calculate">Calculate GPA</button>
+                <button id="clear">Clear</button>
+            </div>
+            <div>
+                <p id="gpa">GPA: <span id="gpaValue">0.00</span></p>
+            </div>
+        </div>
+        <script src="Calculation.js"></script>
+    </body>
+</html>

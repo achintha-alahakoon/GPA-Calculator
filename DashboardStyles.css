@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  /* Ensure the container is centered even with more content */
+    overflow: auto;     /* Allow scrolling if needed */
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;  /* Set width to 100% for responsiveness */
+    max-width: 800px;  /* Limit the max width for readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;  /* Space between elements */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;  /* Ensure the input fields and button take full width */
+}
+
+.input-container input[type="text"],
+.input-container input[type="number"] {
+    width: calc(33% - 10px);  /* Adjust width for responsiveness */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;  /* Include padding in width calculations */
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;  /* Allow horizontal scrolling if needed */
+    overflow-y: auto;  /* Allow vertical scrolling if needed */
+    max-height: 400px;  /* Limit the max height for better UX */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+#clear {
+    background-color: #ff3b3b;
+}
+
+#clear:hover {
+    background-color: #d32f2f;
+}
+
+#gpa {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
